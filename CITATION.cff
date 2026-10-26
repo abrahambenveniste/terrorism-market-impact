@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "If you use this research protocol or its code, please cite the repository and the individual data sources listed in docs/data-sources.md."
+title: "Terrorism and Domestic Stock-Market Responses"
+type: software
+abstract: "An open, reproducible research project studying short-run domestic equity-market responses to terrorist attacks across countries and over time."
+repository-code: "https://github.com/abrahambenveniste/terrorism-market-impact"
+

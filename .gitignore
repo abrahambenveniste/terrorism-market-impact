@@ -1,0 +1,21 @@
+# Licensed and locally acquired source data
+data/raw/**
+!data/raw/README.md
+data/processed/**
+!data/processed/README.md
+
+# Local credentials and environments
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Local build output
+dist/
+build/
+*.egg-info/
+
