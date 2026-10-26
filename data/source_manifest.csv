@@ -8,4 +8,7 @@ dax,DEU,DAX Price Index DAXPR,STOXX,https://stoxx.com/index/dax/?factsheet=true,
 ta125,ISR,TA-125,TASE,https://www.tase.co.il/en/content/products_lobby/datastore_pricelist,,,,daily,ILS,price candidate,https://www.tase.co.il/en/content/products_lobby/datastore_pricelist,check current terms,,,,TASE lists paid five-/ten-year historical index EOD products.
 ux,UKR,Ukrainian Equities Index UX,Ukrainian Exchange,https://www.ux.ua/en/,,,,daily,UAH,price candidate,https://www.ux.ua/en/,unverified,,,,Verify official export, full-history coverage, and reuse terms; market disruptions are material.
 tasi,SAU,Tadawul All Share Index,Saudi Exchange,https://www.saudiexchange.sa/wps/portal/saudiexchange/trading/market-services/market-information-services/indices-data?locale=en,,,,daily,SAR,price candidate,https://www.saudiexchange.sa/wps/portal/saudiexchange/trading/market-services/market-information-services/indices-data?locale=en,check current terms,,,,Exchange documentation lists five years of end-of-day data.
+acled_candidate,ALL,ACLED core event data,ACLED,https://acleddata.com/acled-api-documentation,,,,event-level,NA,NA,https://acleddata.com/terms-use,no for raw records,,,,Separate validation/extension only; verify access and allowed public outputs under current terms.
+global_benchmark_candidate,ALL,Daily global or regional equity benchmark,TBD,,,,daily,TBD,price candidate,TBD,unverified,,,,Required for the proposed market model; coverage, provider, and public-output rights remain to be audited.
+
 
