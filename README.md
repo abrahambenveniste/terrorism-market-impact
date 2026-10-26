@@ -12,7 +12,7 @@ The intended primary outcome is the magnitude of a market's abnormal return arou
 
 ## What the initial evidence says about data feasibility
 
-- The [Global Terrorism Database (GTD)](https://www.start.umd.edu/download-global-terrorism-database) is the best starting point for a consistent historical event definition. Its current full file covers 1970–2020, has a known 1993 data gap, and may not be republished. A separate partial file covers January–June 2021.
+- The [Global Terrorism Database (GTD)](https://www.start.umd.edu/download-global-terrorism-database) is the primary candidate for a consistent historical event definition. Its current full file covers 1970–2020, has a known 1993 data gap, and may not be republished. A separate partial file covers January–June 2021.
 - The [World Bank Global Economic Monitor (GEM)](https://datacatalog.worldbank.org/infrastructure-data/search/dataset/0037798/global-economic-monitor) is public and CC BY 4.0. Its downloadable “Stock Markets” workbook has annual and monthly sheets, not daily prices, so it cannot identify trading-day reactions to individual attacks.
 - Official daily index history is fragmented across providers. Some sites expose recent values, while long historical exports or redistribution rights may require a license. **We have not yet found a complete, openly licensed, daily panel spanning all seven markets and decades.**
 - [ACLED](https://acleddata.com/acled-api-documentation) is frequently updated and offers an API, but its event taxonomy differs from GTD and its terms restrict raw-data sharing. It will not be silently spliced into the historical GTD series.
@@ -56,6 +56,7 @@ The code environment and analysis pipeline will be pinned and documented when th
 - `docs/research-design.md` — definitions, estimands, event-study plan, trend model, robustness checks, and limitations.
 - `docs/data-dictionary.md` — normalized event and market-data fields.
 - `docs/tooling.md` — tools used for the feasibility review and the planned analysis environment.
+- `docs/literature.md` — prior cross-country work and the proposed contribution.
 - `docs/decisions.md` — choices made and questions still open.
 - `data/source_manifest.csv` — per-series provenance, coverage, frequency, license, and checksum register.
 - `data/raw/README.md` — rules for source files kept locally.
@@ -69,4 +70,5 @@ The code environment and analysis pipeline will be pinned and documented when th
 ## Next research decision
 
 The daily market-data audit is the gating step. If no defensible free daily series covers the requested countries and period, the study will either narrow its country/time coverage or change to a monthly question; it will not use an undocumented price aggregator as if it were official data. See [open decisions](docs/decisions.md).
+
 

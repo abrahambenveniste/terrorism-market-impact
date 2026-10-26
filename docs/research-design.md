@@ -17,6 +17,7 @@ Report direction and magnitude separately. A mean signed return can move toward 
 - Do not infer terrorism from a news headline or from casualties alone. Preserve GTD's incident identifier and uncertainty fields.
 - Treat an event as domestic by location, not perpetrator nationality. Add separate flags for capital-city events, suicide attacks, attack type, and log fatalities/injuries only where the values are known and the codebook supports that interpretation.
 - GTD's 1993 incident-level gap is missing coverage, not zero attacks. Exclude 1993 from event-level rate comparisons and disclose it in all historical plots. GTD's partial 2021 file is not a complete year. No homogeneous GTD trend extends past 2020.
+- GTD collection phases changed over time. Report phase breaks and test whether the trend is robust to phase indicators or phase-specific estimates; do not assume event capture is equally complete in every period.
 - Define the primary unit as one market-event pair. For multiple qualifying events in one country on the same date, retain event-level records but cluster inference by country-date and run an aggregate country-date sensitivity analysis. Flag overlapping event windows.
 
 ## 3. Market sample and alignment
@@ -76,4 +77,5 @@ This is a within-event association design. Market-model residuals do not remove 
 ## 8. Reporting checklist
 
 Before any findings are published, include (1) exact source versions and licenses, (2) country/date coverage and missingness, (3) the event inclusion code, (4) full transformation and analysis code, (5) environment lock file and commands, (6) counts by country/year, (7) primary outcomes and uncertainty intervals, (8) all stated sensitivities, and (9) a no-causal-claim explanation where appropriate.
+
 

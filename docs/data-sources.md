@@ -11,10 +11,12 @@
 - [FAQ](https://www.start.umd.edu/gtd-faqs)
 - Current published full data: 1970–2020; separate partial file: January–June 2021. START says ongoing collection stopped after the partial 2021 file because funding ended.
 - There is a known 1993 incident-level gap: the original cards were lost. Country-level aggregate counts were reconstructed, but individual events cannot be treated as observed.
+- Collection was conducted by different teams across periods (PGIS for 1970–1997; CETIS/START for 1998–March 2008; ISVG/START for April 2008–October 2011; START thereafter). Variables and collection practices are not perfectly uniform over time. Prefer fields documented across the full sample, show period breaks, and test sensitivity to collection phase before interpreting a time trend.
 - GTD reflects public reporting. START describes its corroboration effort but does not claim every reported detail is independently verified as true. Definitions are operationalized through coded inclusion criteria, not a universal definition of terrorism.
 - GTD is limited to non-state terrorism and excludes state terrorism. Its inclusion criteria, `doubtterr`, and other fields allow researchers to construct stricter and broader samples.
 - Access requires completing START's form and accepting its EULA. The EULA bars republishing or redistributing the raw dataset. Raw GTD files, event narratives, and source material must not be committed to this public repository. Cite the exact version and document changes to the analysis sample.
 - Planned use: main historical event series, with a pre-registered strict sample (`crit1=1`, `crit2=1`, `crit3=1`, `doubtterr=0`) and a clearly labeled sensitivity sample. Unknown fatalities/injuries remain missing, not zero.
+- Suggested citation: START (National Consortium for the Study of Terrorism and Responses to Terrorism). (2022). *Global Terrorism Database 1970–2020* [data file]. https://www.start.umd.edu/gtd
 
 ### Separate validation / extension source: ACLED
 
@@ -48,6 +50,8 @@
 
 Official sources improve provenance, but an official webpage or free-to-view quote is not automatically a free bulk-download or redistribution license. Maintain a source-specific record of terms and coverage.
 
+The daily global or regional benchmark needed for a market model is a separate data series with its own coverage and license. Verify that source and any public-output rights at the same time as the domestic indices; the domestic-index audit alone does not establish a complete event-study input set.
+
 ## Current feasibility conclusion
 
 With the user's constraint of public/free sources, **we have not established a complete, freely reusable daily market-price history for all seven countries over the historical GTD period**. The World Bank's public stock-market workbook is monthly/annual; the official daily offerings we checked are either limited to recent years, require a request/license, or remain to be verified. No empirical analysis should begin until a source-by-country coverage table and rights audit are complete.
@@ -57,4 +61,5 @@ Next, obtain a sample export or API response from each official provider and rec
 ## Provenance fields to preserve
 
 For every retrieved file or series, record provider and dataset, exact index/event definition, identifier, date/frequency coverage, currency and return type, download date, API query or UI filters, source version, license/terms URL and review date, original filename, SHA-256 digest, and each transformation applied. See [`../data/source_manifest.csv`](../data/source_manifest.csv).
+
 
